@@ -11,7 +11,10 @@
     @apply text-lg leading-[32px] text-[#868686];
   }
   .__button {
-    @apply bg-primary hover:bg-primary-dark duration-100 text-white font-semibold rounded-full py-3 px-9 border-none outline-none focus:ring-1 ring-primary ring-offset-2;
+    @apply bg-primary text-center hover:bg-primary-dark duration-100 text-white font-semibold rounded-full py-3 px-9 border-none outline-none focus:ring-1 ring-primary ring-offset-2;
+  }
+  .__button_outline {
+    @apply bg-transparent text-center hover:bg-black duration-100 text-black hover:text-white font-semibold rounded-full py-3 px-9 border border-black outline-none focus:ring-1 ring-black ring-offset-2;
   }
   .container {
     @apply px-5 max-w-[1560px] mx-auto;

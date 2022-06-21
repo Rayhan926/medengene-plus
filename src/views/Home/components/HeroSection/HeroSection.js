@@ -19,7 +19,7 @@ const HeroSection = () => {
           volutpat condimentum pretiu mauctor id maecenas Scelerisque at
         </p>
 
-        <div className="mt-[55px] flex items-center flex-wrap gap-6">
+        <div className="mt-[55px] flex items-center flex-wrap gap-3">
           <button className="__button">Get Started</button>
           <button className="flex items-center justify-center py-3 px-9 gap-3 rounded-full hover:bg-dark-700/10 duration-100">
             <ImPlay3 />

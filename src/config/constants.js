@@ -23,3 +23,22 @@ export const qualitiHealthCards = [
       "Scelerisque at auctor id maecenas amet, nisl ipsum urna ut a ac olutpat condim entum pretiu mauctor id maecenas Sceleri.",
   },
 ];
+
+export const navLinks = [
+  {
+    text: "Home",
+    url: "/",
+  },
+  {
+    text: "About",
+    url: "#",
+  },
+  {
+    text: "Health Stories",
+    url: "#",
+  },
+  {
+    text: "Blog",
+    url: "#",
+  },
+];
