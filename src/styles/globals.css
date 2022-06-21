@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title_md {
+    @apply text-[50px] leading-[65px] text-black font-bold;
+  }
+  .subtitle_lg {
+    @apply text-lg leading-[32px] text-[#868686];
+  }
+  .__button {
+    @apply bg-primary hover:bg-primary-dark duration-100 text-white font-semibold rounded-full py-3 px-9 border-none outline-none focus:ring-1 ring-primary ring-offset-2;
+  }
+  .container {
+    @apply px-5 max-w-[1560px] mx-auto;
+  }
+}
