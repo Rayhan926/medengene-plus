@@ -42,3 +42,34 @@ export const navLinks = [
     url: "#",
   },
 ];
+
+export const blogs = [
+  {
+    image: "/img/blog_1.jpg",
+    title: "In faucibus sapien nunc eleifend",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque risus sed urna aliquet, ac hendrerit turpis sollicitudin.",
+    link: "#",
+  },
+  {
+    image: "/img/blog_2.jpg",
+    title: "In faucibus sapien nunc eleifend",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque risus sed urna aliquet, ac hendrerit turpis sollicitudin.",
+    link: "#",
+  },
+  {
+    image: "/img/blog_3.jpg",
+    title: "In faucibus sapien nunc eleifend",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque risus sed urna aliquet, ac hendrerit turpis sollicitudin.",
+    link: "#",
+  },
+  {
+    image: "/img/blog_4.jpg",
+    title: "In faucibus sapien nunc eleifend",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque risus sed urna aliquet, ac hendrerit turpis sollicitudin.",
+    link: "#",
+  },
+];

@@ -24,7 +24,7 @@ const TeamSection = () => {
         </div>
       </div>
 
-      <div className="max-w-[95%] mx-auto bg-[#FDFDFD] rounded-[40px] pb-[100px]">
+      <div className="max-w-[92%] mx-auto bg-[#FDFDFD] rounded-[40px] pb-[100px]">
         <div className="container">
           <div className="pt-[185px] grid grid-cols-2 gap-[150px]">
             <div className="pt-14">
