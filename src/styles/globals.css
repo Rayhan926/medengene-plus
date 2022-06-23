@@ -2,16 +2,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  @apply scroll-smooth;
+}
 
 @layer components {
   .title_md {
-    @apply text-[50px] leading-[65px] text-black font-bold;
+    @apply text-[36px] leading-[54px] lg:text-[50px] lg:leading-[65px] text-black font-bold;
   }
   .title_sm {
-    @apply text-[40px] leading-[55px] text-black font-bold;
+    @apply text-[34px] leading-[48px] lg:text-[40px] lg:leading-[55px] text-black font-bold;
   }
   .subtitle_lg {
     @apply text-lg leading-[32px] text-[#868686];
+  }
+  .__input {
+    @apply outline-none w-full block border border-[#5E6575] focus:border-[#545b6a] rounded-full bg-[rgba(40,40,40,0.01)] focus:bg-white text-dark-700 px-6 py-4 pt-[18px];
   }
   .__button {
     @apply bg-primary text-center hover:bg-primary-dark duration-100 text-white font-semibold rounded-full py-3 px-9 border-none outline-none focus:ring-1 ring-primary ring-offset-2;

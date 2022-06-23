@@ -73,3 +73,69 @@ export const blogs = [
     link: "#",
   },
 ];
+
+export const footerLinks = {
+  company: {
+    section_title: "Company",
+    links: [
+      {
+        text: "About Us",
+        url: "#",
+      },
+      {
+        text: "Careers",
+        url: "#",
+      },
+      {
+        text: "Press & Media",
+        url: "#",
+      },
+      {
+        text: "Contact Us",
+        url: "#",
+      },
+    ],
+  },
+  discover: {
+    section_title: "Discover",
+    links: [
+      {
+        text: "Our Blog",
+        url: "#",
+      },
+      {
+        text: "Advertising",
+        url: "#",
+      },
+      {
+        text: "Plans & Pricing",
+        url: "#",
+      },
+      {
+        text: "Testimonials",
+        url: "#",
+      },
+    ],
+  },
+  legal: {
+    section_title: "Legal",
+    links: [
+      {
+        text: "Terms of Use",
+        url: "#",
+      },
+      {
+        text: "Privacy Policy ",
+        url: "#",
+      },
+      {
+        text: "Cookie Policy",
+        url: "#",
+      },
+      {
+        text: "All FAQs",
+        url: "#",
+      },
+    ],
+  },
+};

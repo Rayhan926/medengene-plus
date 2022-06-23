@@ -23,10 +23,8 @@ const ClientsSection = () => {
           </div>
         </div>
 
-        <div className="w-full">
+        <div className="w-full px-5 xl:px-0">
           <Swiper
-            slidesPerView={2.2}
-            spaceBetween={120}
             centeredSlides={true}
             autoplay={{
               delay: 2000,
@@ -42,6 +40,15 @@ const ClientsSection = () => {
             navigation={{
               nextEl: "#client_next_btn",
               prevEl: "#client_prev_btn",
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              1280: {
+                slidesPerView: 2.2,
+                spaceBetween: 120,
+              },
             }}
           >
             {[1, 2, 3, 4].map((e) => (

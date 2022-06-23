@@ -3,20 +3,20 @@ import { FiCheck } from "react-icons/fi";
 
 const TeamSection = () => {
   return (
-    <section className="mt-[150px]">
-      <div className="container -mb-[90px] relative z-[2]">
+    <section className="mt-[90px] xl:mt-[150px]">
+      <div className="container xl:-mb-[90px] relative z-[2]">
         <div
           style={{
             boxShadow: "0px 100px 113px -11px #0000000A",
           }}
-          className="mx-auto bg-white px-[60px] py-9 flex gap-[100px] items-center justify-between"
+          className="mx-auto bg-white pt-10 pb-20 px-[60px] xl:py-9 flex flex-col xl:flex-row gap-[100px] items-center justify-between"
         >
-          <p className="subtitle_lg">
+          <p className="subtitle_lg text-center xl:text-left">
             Scelerisque at auctor id maecenas amet, nisl ipsum urna ut a ac
             volutpat condim entum pretiu mauctor id maec enas Scelerisque at
             Scelerisque.
           </p>
-          <div className="flex items-center gap-20">
+          <div className="flex flex-col items-center gap-16 xl:flex-row xl:gap-20">
             <StatBox value="2000" label="Doctor" />
             <StatBox value="62" label="City" />
             <StatBox value="100" label="Facility" />
@@ -24,11 +24,14 @@ const TeamSection = () => {
         </div>
       </div>
 
-      <div className="max-w-[92%] mx-auto bg-[#FDFDFD] rounded-[40px] pb-[100px]">
+      <div className="max-w-[92%] mt-[70px] xl:mt-0 mx-auto xl:bg-[#FDFDFD] rounded-[40px] pb-[100px]">
         <div className="container">
-          <div className="pt-[185px] grid grid-cols-2 gap-[150px]">
-            <div className="pt-14">
-              <h2 className="title_md">
+          <h2 className="title_md xl:hidden text-center mb-10">
+            You Care <span className="text-primary">Team</span>
+          </h2>
+          <div className="xl:pt-[185px] grid grid-cols-1 xl:grid-cols-2 gap-10 xl:gap-[150px]">
+            <div className="-mt-12 xl:mt-0 xl:pt-14 order-2 xl:order-[unset]">
+              <h2 className="title_md hidden xl:block">
                 You Care <span className="text-primary">Team</span>
               </h2>
               <div className="subtitle_lg mt-[30px]">
@@ -53,8 +56,8 @@ const TeamSection = () => {
               </ul>
             </div>
 
-            <div className="space-y-[21px]">
-              <div className="grid grid-cols-[260px,310px] gap-[43px]">
+            <div className="space-y-[21px] px-6 xl:px-0">
+              <div className="grid grid-cols-[45%,55%] xl:grid-cols-[260px,310px] gap-[43px]">
                 <img
                   src="/img/team_1.jpg"
                   className="w-full rounded-[20px] overflow-hidden h-auto"
@@ -72,7 +75,7 @@ const TeamSection = () => {
                   alt="team_2"
                 />
               </div>
-              <div className="grid grid-cols-[310px,260px] gap-[43px] -translate-x-[45px]">
+              <div className="grid grid-cols-[55%,45%] xl:grid-cols-[310px,260px] gap-[43px] -translate-x-[45px]">
                 <img
                   src="/img/team_3.jpg"
                   className="w-full rounded-[20px] overflow-hidden h-auto -translate-y-[52px]"

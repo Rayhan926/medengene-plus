@@ -15,7 +15,7 @@ const ScelerisqueAtAuctor = () => {
           </p>
         </div>
 
-        <div className="mt-[100px] max-w-[1150px] mx-auto grid grid-cols-2 gap-[50px]">
+        <div className="mt-[60px] lg:mt-[100px] max-w-[1150px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-9 lg:gap-[50px]">
           {[1, 2].map((e) => (
             <div
               key={e}

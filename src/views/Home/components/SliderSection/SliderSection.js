@@ -7,10 +7,10 @@ const SliderSection = () => {
   return (
     <section className="pt-10 mt-10">
       <div className="container">
-        <div className="grid grid-cols-2 gap-[104px] place-items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-[104px] place-items-center">
           <div>
             <div className="relative">
-              <div className="absolute h-[90%] w-[500%] right-[30%] bg-primary z-[-1] -top-10"></div>
+              <div className="absolute h-[90%] w-[500%] right-[30%] bg-primary z-[-1] -top-10 hidden xl:block"></div>
               <div className="rounded-[20px] overflow-hidden slider_section_img">
                 <Image
                   objectFit="cover"
