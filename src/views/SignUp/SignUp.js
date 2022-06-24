@@ -4,20 +4,13 @@ import Input from "@components/Input";
 import Link from "next/link";
 import React from "react";
 
-const SignIn = () => {
+const SignUp = () => {
   return (
     <section>
       <div className="absolute top-0 left-0 w-full z-[10] bg-white lg:hidden">
         <Header />
       </div>
-      <div className="grid grid-cols-1 xl:grid-cols-[55%,auto] gap-7 xl:px-9 py-[55px] min-h-screen">
-        <div className="bg-slate-100 rounded-[20px] overflow-hidden hidden xl:block">
-          <img
-            src="/img/slider_section_img.jpg"
-            alt="slider_section_img"
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <div className="grid grid-cols-1 xl:grid-cols-[auto,55%] gap-7 xl:px-9 py-[55px] min-h-screen">
         <div className="bg-white rounded-[20px] flex flex-col justify-center items-center px-5 xl:px-[50px] py-[100px] xl:card_shadow">
           <img
             src="/img/medengene.png"
@@ -34,24 +27,32 @@ const SignIn = () => {
           <form className="mt-[60px] space-y-5 w-full">
             <Input placeholder="Email" />
             <Input placeholder="Password" />
+            <Input placeholder="Confirm Password" />
             <Checkbox label={"Remember me"} />
             <button type="submit" className="__button py-4 w-full">
-              Sign In
+              Sign Up
             </button>
           </form>
 
           <div className="mt-[90px]">
             <p className="text-[#282828] font-semibold">
               I don’t have an account?
-              <Link href="/signup">
-                <a className="text-primary hover:underline ml-2">Signup</a>
+              <Link href="/signin">
+                <a className="text-primary hover:underline ml-2">SignIn</a>
               </Link>
             </p>
           </div>
+        </div>
+        <div className="bg-slate-100 rounded-[20px] overflow-hidden hidden xl:block">
+          <img
+            src="/img/signup_image.jpg"
+            alt="signup_image"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>
   );
 };
 
-export default SignIn;
+export default SignUp;

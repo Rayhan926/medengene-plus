@@ -12,7 +12,7 @@ import TeamSection from "./components/TeamSection";
 const Home = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <HeroSection />
       <QualityYourHealthSection />
       <TeamSection />
