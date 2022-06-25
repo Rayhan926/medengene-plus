@@ -8,8 +8,8 @@ import { FiChevronDown } from "react-icons/fi";
 const DashboardSidebar = () => {
   const router = useRouter();
   return (
-    <div className="bg-white px-4 py-6">
-      <Link href={"/"}>
+    <div className="bg-white px-4 py-6 hidden lg:block">
+      <Link href={"/care-center"}>
         <a>
           <Image
             src={"/img/medengene-sidebar.png"}
@@ -21,20 +21,7 @@ const DashboardSidebar = () => {
       </Link>
 
       <div className="mt-[85px]">
-        <ul>
-          {sidebarLinks.map((props, i) => {
-            return (
-              <li key={i}>
-                <LinkRenderer {...props} />
-                <div className="pl-4 mt-5 space-y-3">
-                  {props.sublinks.map((sublink, index) => (
-                    <LinkRenderer {...sublink} key={index} />
-                  ))}
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+        <NavLinks />
       </div>
     </div>
   );
@@ -42,12 +29,32 @@ const DashboardSidebar = () => {
 
 export default DashboardSidebar;
 
-const LinkRenderer = ({ icon, sublinks, text, url }) => {
+export const NavLinks = ({ forceClose }) => {
+  return (
+    <ul>
+      {sidebarLinks.map((props, i) => {
+        return (
+          <li key={i}>
+            <LinkRenderer {...props} forceClose={forceClose} />
+            <div className="pl-4 mt-5 space-y-3">
+              {props.sublinks.map((sublink, index) => (
+                <LinkRenderer {...sublink} key={index} />
+              ))}
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
+const LinkRenderer = ({ icon, sublinks, text, url, forceClose }) => {
   const router = useRouter();
   const isActive = router.pathname === url;
   return (
     <Link href={url}>
       <a
+        onClick={forceClose}
         className={`flex justify-between items-center rounded-full py-3 px-5 ${
           isActive
             ? "bg-[#F0F0F0] text-black"

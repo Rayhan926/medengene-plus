@@ -35,9 +35,11 @@ const SignIn = () => {
             <Input placeholder="Email" />
             <Input placeholder="Password" />
             <Checkbox label={"Remember me"} />
-            <button type="submit" className="__button py-4 w-full">
-              Sign In
-            </button>
+            <Link href={"/care-center"}>
+              <a type="submit" className="__button py-4 w-full">
+                Sign In
+              </a>
+            </Link>
           </form>
 
           <div className="mt-[90px]">

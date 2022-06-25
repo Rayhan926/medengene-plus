@@ -13,7 +13,7 @@ const HeroSection = () => {
       className="relative"
     >
       <a
-        href="#scroll-bottom"
+        href="#about"
         className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[70px] h-[70px] rounded-full flex justify-center items-center text-white bg-black/5 hover:bg-black/10 duration-150"
       >
         <BsChevronDown className="w-7 h-7" />

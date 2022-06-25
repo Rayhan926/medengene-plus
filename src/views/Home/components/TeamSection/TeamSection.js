@@ -3,7 +3,7 @@ import { FiCheck } from "react-icons/fi";
 
 const TeamSection = () => {
   return (
-    <section className="mt-[90px] xl:mt-[150px]">
+    <section className="mt-[50px] xl:mt-[150px]">
       <div className="container xl:-mb-[90px] relative z-[2]">
         <div
           style={{
@@ -57,7 +57,7 @@ const TeamSection = () => {
             </div>
 
             <div className="space-y-[21px] px-6 xl:px-0">
-              <div className="grid grid-cols-[45%,55%] xl:grid-cols-[260px,310px] gap-[43px]">
+              <div className="grid grid-cols-[45%,55%] xl:grid-cols-[260px,310px] gap-9 xl:gap-[43px]">
                 <img
                   src="/img/team_1.jpg"
                   className="w-full rounded-[20px] overflow-hidden h-auto"
@@ -75,10 +75,10 @@ const TeamSection = () => {
                   alt="team_2"
                 />
               </div>
-              <div className="grid grid-cols-[55%,45%] xl:grid-cols-[310px,260px] gap-[43px] -translate-x-[45px]">
+              <div className="grid grid-cols-[55%,45%] xl:grid-cols-[310px,260px] gap-9 xl:gap-[43px] -translate-x-9 xl:-translate-x-[45px]">
                 <img
                   src="/img/team_3.jpg"
-                  className="w-full rounded-[20px] overflow-hidden h-auto -translate-y-[52px]"
+                  className="w-full rounded-[20px] overflow-hidden h-auto -translate-y-10 xl:-translate-y-[52px]"
                   style={{
                     boxShadow: "0px 100px 113px -11px #0000000A",
                   }}

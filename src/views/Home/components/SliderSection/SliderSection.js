@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 const SliderSection = () => {
   return (
-    <section className="pt-10 mt-10">
+    <section className="pt-10 mt-10 scroll-mt-10" id="health-stories">
       <div className="container">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-[104px] place-items-center">
           <div>

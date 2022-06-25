@@ -8,7 +8,7 @@ import Image from "next/image";
 const ClientsSection = () => {
   return (
     <section className="mt-[140px]">
-      <div className="title_sm uppercase text-center">
+      <div className="title_sm uppercase text-center px-5">
         What Our clients <span className="text-primary">say</span>
       </div>
 
@@ -95,7 +95,7 @@ const ClientsSection = () => {
                       </div>
                     </div>
 
-                    <div>
+                    <div className="hidden lg:block">
                       <Link href={"#"}>
                         <a className="flex items-center gap-3.5 py-1.5 border-b-[3px] border-primary">
                           View Project

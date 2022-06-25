@@ -120,10 +120,12 @@ const MobileHeader = () => {
 const Buttons = () => {
   return (
     <div className="flex flex-wrap gap-4">
-      <button className="block w-full lg:w-auto __button_outline">
-        Get the app
-      </button>
-      <button className="block w-full lg:w-auto __button">Signup</button>
+      <Link href={"/care-center"}>
+        <a className="block w-full lg:w-auto __button_outline">Get the app</a>
+      </Link>
+      <Link href="/signup">
+        <a className="block w-full lg:w-auto __button">Signup</a>
+      </Link>
     </div>
   );
 };

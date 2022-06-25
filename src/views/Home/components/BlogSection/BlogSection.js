@@ -5,7 +5,7 @@ import React from "react";
 
 const BlogSection = () => {
   return (
-    <div className="mt-[180px] pb-[180px]">
+    <div className="mt-[180px] pb-[180px]" id="blog">
       <TheFutureOfQualityYourHealth />
       <section>
         <div className="container">
@@ -17,7 +17,7 @@ const BlogSection = () => {
                     <div className="w-fulll max-h-[423px] overflow-hidden">
                       <img src={image} alt={title} className="w-full" />
                     </div>
-                    <div className="px-[50px] py-10">
+                    <div className="px-5 lg:px-[50px] py-7 lg:py-10">
                       <h3 className="text-[30px] font-bold leading-[45px]">
                         {title}
                       </h3>
