@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary">
       <div className="container pt-[60px] pb-[70px]">
-        <div className="grid grid-cols-2 gap-y-16 xl:grid-cols-[25%,18%,18%,18%,21%]">
+        <div className="grid grid-cols-2 gap-y-16 xl:grid-cols-[19%,16%,16%,16%,17%,16%]">
           <div className="hidden xl:block">
             <Link href={"/"}>
               <a>
@@ -44,9 +44,36 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
+          <div>
+            <h6 className="text-lx mb-5 text-white font-semibold">
+              Download the App
+            </h6>
+
+            <div className="space-y-2.5 w-[75%]">
+              <a href="#" rel="noreferrer" className="block" target={"_blank"}>
+                <Image
+                  src="/img/app-store.png"
+                  className="w-full"
+                  alt="app-store"
+                  width={501}
+                  height={168}
+                />
+              </a>
+              <a href="#" rel="noreferrer" className="block" target={"_blank"}>
+                <Image
+                  width={565}
+                  height={170}
+                  src="/img/google-play.png"
+                  className="w-full"
+                  alt="google-play"
+                />
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div className="flex justify-center xl:hidden">
+        <div className="flex justify-center xl:hidden mt-6">
           <Link href={"/"}>
             <a>
               <Image

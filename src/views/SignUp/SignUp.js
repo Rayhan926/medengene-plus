@@ -1,6 +1,7 @@
 import Checkbox from "@components/Checkbox";
 import Header from "@components/Header";
 import Input from "@components/Input";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,7 +13,9 @@ const SignUp = () => {
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-[auto,55%] gap-7 xl:px-9 py-[55px] min-h-screen">
         <div className="bg-white rounded-[20px] flex flex-col justify-center items-center px-5 xl:px-[50px] py-[100px] xl:card_shadow">
-          <img
+          <Image
+            width={520}
+            height={93}
             src="/img/medengene.png"
             alt="medengene"
             className="hidden xl:block w-full max-w-[520px]"
@@ -45,8 +48,11 @@ const SignUp = () => {
             </p>
           </div>
         </div>
-        <div className="bg-slate-100 rounded-[20px] overflow-hidden hidden xl:block">
-          <img
+        <div className="bg-slate-100 rounded-[20px] overflow-hidden hidden xl:block [&>span]:!h-full">
+          <Image
+            width={1041}
+            height={926}
+            layout="responsive"
             src="/img/signup_image.jpg"
             alt="signup_image"
             className="w-full h-full object-cover"

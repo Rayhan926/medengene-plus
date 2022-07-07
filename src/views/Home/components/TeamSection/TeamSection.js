@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FiCheck } from "react-icons/fi";
 
@@ -58,40 +59,49 @@ const TeamSection = () => {
 
             <div className="space-y-[21px] px-6 xl:px-0">
               <div className="grid grid-cols-[45%,55%] xl:grid-cols-[260px,310px] gap-9 xl:gap-[43px]">
-                <img
-                  src="/img/team_1.jpg"
-                  className="w-full rounded-[20px] overflow-hidden h-auto"
-                  style={{
-                    boxShadow: "0px 100px 113px -11px #0000000A",
-                  }}
-                  alt="team_1"
-                />
-                <img
-                  src="/img/team_2.jpg"
-                  className="w-full rounded-[20px] overflow-hidden h-auto"
-                  style={{
-                    boxShadow: "0px 100px 113px -11px #0000000A",
-                  }}
-                  alt="team_2"
-                />
+                <div className="w-[260px] h-[271px] relative rounded-[20px] overflow-hidden">
+                  <Image
+                    src="/img/team_1.jpg"
+                    className="w-full  h-auto"
+                    style={{
+                      boxShadow: "0px 100px 113px -11px #0000000A",
+                    }}
+                    alt="team_1"
+                    layout="fill"
+                  />
+                </div>
+                <div className="w-[310px] h-[323px] relative rounded-[20px] overflow-hidden">
+                  <Image
+                    layout="fill"
+                    src="/img/team_2.jpg"
+                    style={{
+                      boxShadow: "0px 100px 113px -11px #0000000A",
+                    }}
+                    alt="team_2"
+                  />
+                </div>
               </div>
               <div className="grid grid-cols-[55%,45%] xl:grid-cols-[310px,260px] gap-9 xl:gap-[43px] -translate-x-9 xl:-translate-x-[45px]">
-                <img
-                  src="/img/team_3.jpg"
-                  className="w-full rounded-[20px] overflow-hidden h-auto -translate-y-10 xl:-translate-y-[52px]"
-                  style={{
-                    boxShadow: "0px 100px 113px -11px #0000000A",
-                  }}
-                  alt="team_3"
-                />
-                <img
-                  src="/img/team_4.jpg"
-                  className="w-full rounded-[20px] overflow-hidden h-auto"
-                  style={{
-                    boxShadow: "0px 100px 113px -11px #0000000A",
-                  }}
-                  alt="team_4"
-                />
+                <div className="w-[310px] h-[323px] relative rounded-[20px] overflow-hidden -translate-y-10 xl:-translate-y-[52px]">
+                  <Image
+                    layout="fill"
+                    src="/img/team_3.jpg"
+                    style={{
+                      boxShadow: "0px 100px 113px -11px #0000000A",
+                    }}
+                    alt="team_3"
+                  />
+                </div>
+                <div className="w-[260px] h-[271px] relative rounded-[20px] overflow-hidden">
+                  <Image
+                    layout="fill"
+                    src="/img/team_4.jpg"
+                    style={{
+                      boxShadow: "0px 100px 113px -11px #0000000A",
+                    }}
+                    alt="team_4"
+                  />
+                </div>
               </div>
             </div>
           </div>

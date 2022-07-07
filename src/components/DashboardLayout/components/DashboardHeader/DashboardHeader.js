@@ -118,7 +118,7 @@ const HeaderRight = () => {
   return (
     <div className="flex flex-col lg:flex-row lg:items-center gap-4">
       <div className="flex items-center gap-2 text-black">
-        <img src="/img/english.png" alt="english" />
+        <Image width={21} height={16} src="/img/english.png" alt="english" />
         English
       </div>
       <FiSun size={22} className="cursor-pointer" />

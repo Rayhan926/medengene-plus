@@ -7,7 +7,6 @@ import { userProfilePageTabs } from "@config/constants";
 const UserProfile = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(2);
   const activeTabComponent = userProfilePageTabs[activeTabIndex].component;
-  console.log({ activeTabComponent });
   return (
     <DashboardLayout>
       <div className="pb-8">

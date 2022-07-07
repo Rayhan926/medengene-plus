@@ -1,6 +1,7 @@
 import Checkbox from "@components/Checkbox";
 import Header from "@components/Header";
 import Input from "@components/Input";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -11,15 +12,20 @@ const SignIn = () => {
         <Header />
       </div>
       <div className="grid grid-cols-1 xl:grid-cols-[55%,auto] gap-7 xl:px-9 py-[55px] min-h-screen">
-        <div className="bg-slate-100 rounded-[20px] overflow-hidden hidden xl:block">
-          <img
+        <div className="bg-slate-100 rounded-[20px] overflow-hidden hidden xl:block [&>span]:!h-full">
+          <Image
+            width={706 * 2.5}
+            height={590 * 2.5}
+            layout="responsive"
             src="/img/slider_section_img.jpg"
             alt="slider_section_img"
             className="w-full h-full object-cover"
           />
         </div>
         <div className="bg-white rounded-[20px] flex flex-col justify-center items-center px-5 xl:px-[50px] py-[100px] xl:card_shadow">
-          <img
+          <Image
+            width={520}
+            height={93}
             src="/img/medengene.png"
             alt="medengene"
             className="hidden xl:block w-full max-w-[520px]"
