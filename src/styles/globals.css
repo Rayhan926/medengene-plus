@@ -6,6 +6,10 @@ html {
   @apply scroll-smooth;
 }
 
+#__next {
+  @apply max-w-[100vw] overflow-x-hidden;
+}
+
 @layer components {
   .title_md {
     @apply text-[36px] leading-[54px] lg:text-[50px] lg:leading-[65px] text-black font-bold;

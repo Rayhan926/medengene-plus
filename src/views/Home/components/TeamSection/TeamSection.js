@@ -58,8 +58,8 @@ const TeamSection = () => {
             </div>
 
             <div className="space-y-[21px] px-6 xl:px-0">
-              <div className="grid grid-cols-[45%,55%] xl:grid-cols-[260px,310px] gap-9 xl:gap-[43px]">
-                <div className="w-[260px] h-[271px] relative rounded-[20px] overflow-hidden">
+              <div className="grid grid-cols-[45%,55%] xl:grid-cols-[260px,310px] gap-5 xl:gap-[43px]">
+                <div className="relative rounded-[20px] overflow-hidden">
                   <Image
                     src="/img/team_1.jpg"
                     className="w-full  h-auto"
@@ -67,24 +67,27 @@ const TeamSection = () => {
                       boxShadow: "0px 100px 113px -11px #0000000A",
                     }}
                     alt="team_1"
-                    layout="fill"
+                    width={260}
+                    height={271}
                   />
                 </div>
-                <div className="w-[310px] h-[323px] relative rounded-[20px] overflow-hidden">
+                <div className="relative rounded-[20px] overflow-hidden">
                   <Image
-                    layout="fill"
                     src="/img/team_2.jpg"
                     style={{
                       boxShadow: "0px 100px 113px -11px #0000000A",
                     }}
                     alt="team_2"
+                    width={310}
+                    height={323}
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-[55%,45%] xl:grid-cols-[310px,260px] gap-9 xl:gap-[43px] -translate-x-9 xl:-translate-x-[45px]">
-                <div className="w-[310px] h-[323px] relative rounded-[20px] overflow-hidden -translate-y-10 xl:-translate-y-[52px]">
+              <div className="grid grid-cols-[55%,45%] xl:grid-cols-[310px,260px] gap-5 xl:gap-[43px] -translate-x-9 xl:-translate-x-[45px]">
+                <div className="relative rounded-[20px] overflow-hidden -translate-y-10 xl:-translate-y-[52px]">
                   <Image
-                    layout="fill"
+                    width={310}
+                    height={323}
                     src="/img/team_3.jpg"
                     style={{
                       boxShadow: "0px 100px 113px -11px #0000000A",
@@ -92,9 +95,10 @@ const TeamSection = () => {
                     alt="team_3"
                   />
                 </div>
-                <div className="w-[260px] h-[271px] relative rounded-[20px] overflow-hidden">
+                <div className="relative rounded-[20px] overflow-hidden">
                   <Image
-                    layout="fill"
+                    width={260}
+                    height={271}
                     src="/img/team_4.jpg"
                     style={{
                       boxShadow: "0px 100px 113px -11px #0000000A",
